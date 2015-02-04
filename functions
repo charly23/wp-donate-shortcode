@@ -18,7 +18,7 @@ function paypal_donate_shortcode($atts) {
 
     return '<a class="donateLink" href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business='.$account.'&item_name='.$itemname.'&item_number=Donation+for+'.$itemnumber.'+via+'.$via.'&amount='.$amount.'&currency_code=USD">'.$text.'</a>';
 }
-add_shortcode('donate', 'paypal_donate_shortcode');
+add_shortcode('wpdonate', 'paypal_donate_shortcode');
 
 
 
@@ -42,4 +42,4 @@ function paypal_image_shortcode($atts) {
 
     return '<a href= "https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business='.$account.'&item_name='.$itemname.'&item_number=Donation+for+'.$itemnumber.'+via+'.$via.'&amount='.$amount.'&currency_code=USD"><img src='.$image.' border="0"></a>';
 }
-add_shortcode('donateimage', 'paypal_image_shortcode');
+add_shortcode('wpdonate', 'paypal_image_shortcode');
